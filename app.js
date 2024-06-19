@@ -17,7 +17,7 @@ function displayTextOnScreen(tag, textTheVariable) {
 
 function displayInitialText() {
   displayTextOnScreen("h1", "Jogo do Número Secreto");
-  displayTextOnScreen(".texto__paragrafo", "Escolha um Número entre 1 e 10 .");
+  displayTextOnScreen(".texto__paragrafo", "Escolha um Número entre 1 e 100 .");
 }
 
 displayInitialText();
@@ -42,7 +42,7 @@ function verificarChute() {
 }
 
 function generateRandomNumber() {
-  return parseInt(Math.random() * 10 + 1);
+  return parseInt(Math.random() * 100 + 1);
 }
 
 function clearValueKick() {
